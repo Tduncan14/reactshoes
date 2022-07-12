@@ -1,0 +1,61 @@
+.navbar{
+    display:flex;
+}
+
+.navlist{
+    display:flex;
+    flex:4
+}
+
+/* logo */
+
+.logo{
+    padding-top:.6rem;
+    font-size:1.5rem;
+    font-weight: 800;
+}
+
+
+
+
+.navlist ul {
+    display:flex;
+}
+
+.navlist ul > li  {
+    padding:0 1.2rem;
+    list-style-type:none;
+}
+.nav-r{
+    display:flex;
+    flex:1 1;
+    padding-top:1rem;
+}
+
+.first{
+    margin-right:2.5rem;
+    height:1.5rem;
+    display:inline-block;
+    padding-right:1rem;
+}
+
+.first:hover{
+    cursor:pointer;
+}
+
+.two{
+    height:5rem;
+    margin-top:-2rem;
+}
+
+
+
+
+/* .nav-r:nth-child(1){
+   
+
+ 
+
+
+}
+ */
