@@ -11,7 +11,8 @@ import  Prev from  '../../asset/icon-previous.svg';
  const  Overlay = ({setTheOverlay,image})  => {
 
     const[mainImage,setmainImage] = useState(image);
-    const [arr,setArray] = useState([])
+    const [arr,setArray] = useState([]);
+    const [active,setActive ] = useState(false);
 
   
     
@@ -105,10 +106,10 @@ import  Prev from  '../../asset/icon-previous.svg';
 
 <div className="subImage">
 
-<img onClick={onChangeImage} className='images imageborder' src={Image1}  alt="image" />
-<img  onClick={onChangeImage}className="images imageborder" src={Image2}  alt="image" />
-<img  onClick={onChangeImage}className="images imageborder" src={Image3}  alt="image" />
-<img  onClick={onChangeImage}className="images imageborder" src={Image4}  alt="image" />
+<img onClick={onChangeImage} className={`images imageborder ` } src={Image1}  alt="image" />
+<img  onClick={onChangeImage}className={`images imageborder`} src={Image2}  alt="image" />
+<img  onClick={onChangeImage}className={`images imageborder`} src={Image3}  alt="image" />
+<img  onClick={onChangeImage}className={`images imageborder`} src={Image4}  alt="image" />
 
 </div>
       

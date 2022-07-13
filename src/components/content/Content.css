@@ -174,12 +174,22 @@ button{
 
 .minus{
     color:orange;
+    cursor: pointer;
+
+}
+
+.minus:hover{
+    cursor:pointer
 }
 
 .plusSign{
     color:orange;
+    
 }
 
+.plusSign:hover{
+    cursor: pointer;
+}
 
 .content{
     margin-top: 2.5rem;
@@ -187,3 +197,6 @@ button{
 
 /*  the percentage money session */
 
+button:hover{
+    cursor: pointer;
+}

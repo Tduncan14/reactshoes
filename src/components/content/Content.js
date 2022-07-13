@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState,useEffect} from 'react'
 import Overlay from '../overlay/Overlay';
 import './Content.css'
 import  Image1 from '../../asset/image-product-1.jpg';
@@ -10,6 +10,8 @@ const Content = ({setTheOverlay,setImage}) => {
 
   const[mainImage,setmainImage] = useState(Image1);
   const[lay,setLay] = useState(false);
+  const[total,setTotal] = useState(0)
+  const[ totalCost,settotalCost] = useState(0);
 
 
   
@@ -21,6 +23,45 @@ const Content = ({setTheOverlay,setImage}) => {
    }
 
 
+   const addShoe = () => {
+    
+       
+     setTotal(total + 1 )
+
+   
+
+   }
+
+   const minusShoe = () => {
+       
+    if( total > 0){
+    setTotal(total - 1 )
+
+  
+
+    }
+
+  
+    console.log(totalCost,'costMinus')
+
+    if(total === 0){
+       settotalCost(0)
+    }
+
+  }
+
+  const totalPrice=()=> {
+
+  
+      settotalCost( total * 125.00)
+
+      console.log(total,'this is the cost',totalCost)
+      
+      }
+
+
+  
+  
   return (
     <>
     <div className="flexContent">
@@ -69,14 +110,14 @@ const Content = ({setTheOverlay,setImage}) => {
 
                 <div className="grayZone">
              
-                <img src={'./images/icon-minus.svg'} />
-                <p class="zero">0</p>
-                <img src={'./images/icon-plus.svg'} />
+                <img className='minus' onClick={minusShoe} src={'./images/icon-minus.svg'} />
+                <p className="zero">{total}</p>
+                <img  className='plusSign' onClick={addShoe} src={'./images/icon-plus.svg'} />
                  </div>
 
 
 
-                <button className='Add-to-cart'>
+                <button  onClick={totalPrice} className='Add-to-cart'>
                   <img className="addCart" src="./images/icon-cart.svg" />
                   <p> Add to cart</p>
                 </button>

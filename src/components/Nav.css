@@ -32,6 +32,20 @@
     padding-top:1rem;
 }
 
+.nav-r :hover{
+    cursor:pointer;
+}
+
+.one:hover{
+    fill:white !important;
+}
+
+.two:hover{
+    border-radius:50%;
+    border:darkorange 2px solid;
+}
+
+
 .first{
     margin-right:2.5rem;
     height:1.5rem;

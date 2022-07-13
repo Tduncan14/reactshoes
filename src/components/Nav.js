@@ -4,7 +4,7 @@ import './Nav.css';
 
 
 
-const Nav = () => {
+const Nav = ({showtheCart}) => {
 
 
     return(
@@ -26,8 +26,8 @@ const Nav = () => {
             </div>
 
 
-          <div className="nav-r">
-              <img className="first"src='./images/icon-cart.svg' />
+          <div   className="nav-r">
+              <img onClick={showtheCart}  className="first"src='./images/icon-cart.svg' />
               <img className="two" src="./images/image-avatar.png"/>
           </div>
 
