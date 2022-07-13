@@ -36,3 +36,37 @@
     left:16rem;
 }
 
+/* the arrow images */
+
+.prev{
+    display:inline-block;
+    background-color:white;
+    border-radius:50%;
+    cursor:pointer;
+    padding:1.3rem;
+    height:1rem;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    top:25rem;
+    right:16rem;
+}
+
+.next{
+    cursor:pointer;
+    display:inline-block;
+    background-color:white;
+    border-radius: 50%;
+    padding:1.3rem;
+    height:1rem;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    top:25rem;
+    left:15rem;
+}
+
