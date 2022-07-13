@@ -6,7 +6,7 @@ import  Image2 from '../../asset/image-product-2.jpg';
 import  Image3 from '../../asset/image-product-3.jpg';
 import  Image4 from '../../asset/image-product-4.jpg';
 
-const Content = ({setTheOverlay}) => {
+const Content = ({setTheOverlay,setImage}) => {
 
   const[mainImage,setmainImage] = useState(Image1);
   const[lay,setLay] = useState(false);
@@ -30,7 +30,7 @@ const Content = ({setTheOverlay}) => {
 
             <div className="mainImage">
 
-              <img onClick={setTheOverlay} src={mainImage}  alt="image" />
+              <img  onClick={setTheOverlay} src={mainImage}  alt="image" />
 
             </div>
 

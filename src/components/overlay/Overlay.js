@@ -6,9 +6,9 @@ import  Image3 from '../../asset/image-product-3.jpg';
 import  Image4 from '../../asset/image-product-4.jpg';
 import  Close from  '../../asset/icon-close.svg';
 
- const  Overlay = ({setTheOverlay})  => {
+ const  Overlay = ({setTheOverlay,image})  => {
 
-    const[mainImage,setmainImage] = useState(Image1);
+    const[mainImage,setmainImage] = useState(image);
 
     
   

@@ -8,11 +8,13 @@ import Overlay from './components/overlay/Overlay';
 function App() {
 
     const [overlay,setoverlay] = useState(false);
+    const [image,setImage] = useState();
 
 
-    const setTheOverlay = () => {
+    const setTheOverlay = (e) => {
 
         setoverlay(!overlay);
+        setImage(e.target.src)
     }
 
   return (
@@ -20,8 +22,8 @@ function App() {
       <Nav />
       <hr className='hr' />
       {/* beginning of Content */}
-      <Content setTheOverlay={setTheOverlay} />
-       { overlay && <Overlay setTheOverlay={setTheOverlay}  />}
+      <Content setImage={setImage} setTheOverlay={setTheOverlay} />
+       { overlay && <Overlay image={image} setTheOverlay={setTheOverlay}  />}
   
     </div>
   );
