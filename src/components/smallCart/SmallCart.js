@@ -1,11 +1,12 @@
-import React,{useState,useEffect} from 'react'
+import React ,{useState,useEffect} from 'react'
 import './smallcart.css';
 
 const SmallCart = ({showCart}) => {
 
-    const {thetext,setTheText} = useState()
+    const [text,setText] = useState('Your cart is empty.')
+    
 
-    console.log(thetext,'this the text')
+    console.log(text,'this the text')
 
 
     //  useEffect(() =>(
@@ -32,7 +33,7 @@ const SmallCart = ({showCart}) => {
 
     <div className="cartDisplay"> 
 
-      {thetext ? thetext : 'Your cart is empty.'}
+      {text ? text : 'Your cart is empty.'}
 
     </div>
   
