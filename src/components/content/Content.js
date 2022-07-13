@@ -1,13 +1,15 @@
 import React ,{useState} from 'react'
+import Overlay from '../overlay/Overlay';
 import './Content.css'
 import  Image1 from '../../asset/image-product-1.jpg';
 import  Image2 from '../../asset/image-product-2.jpg';
 import  Image3 from '../../asset/image-product-3.jpg';
 import  Image4 from '../../asset/image-product-4.jpg';
 
-const Content = () => {
+const Content = ({setTheOverlay}) => {
 
   const[mainImage,setmainImage] = useState(Image1);
+  const[lay,setLay] = useState(false);
 
 
   
@@ -20,6 +22,7 @@ const Content = () => {
 
 
   return (
+    <>
     <div className="flexContent">
 
         <div className="left-c">
@@ -27,7 +30,7 @@ const Content = () => {
 
             <div className="mainImage">
 
-              <img src={mainImage}  alt="image" />
+              <img onClick={setTheOverlay} src={mainImage}  alt="image" />
 
             </div>
 
@@ -82,8 +85,11 @@ const Content = () => {
             </div>
             
             </div>
+           
       
     </div>
+  
+    </>
   )
 }
 

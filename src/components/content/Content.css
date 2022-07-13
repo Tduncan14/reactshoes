@@ -2,6 +2,8 @@
 
 .flexContent{
     display:flex;
+    position: relative;
+    z-index:0;
 }
 
 
@@ -122,11 +124,12 @@ button{
 
 .money .percentage{
     background-color:#fdad5c;
-    padding:.2rem;
+    padding:.4rem;
     border-radius:5px;
     justify-content: center;
     text-align: center;
     align-items: center;
+    align-self: center;
     color:#FF5F1F;
     font-weight:bolder;
     position:relative;

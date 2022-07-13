@@ -1,0 +1,37 @@
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width:100%;
+    z-index: 10;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.mainImag img {
+    object-fit: cover;
+    border-radius:15px;
+    width:34rem;
+    margin-top:7.5rem;
+}
+
+.subImage{
+    display:flex;
+    gap:.5rem;
+    margin-top:1.5rem;
+    margin-left:27rem;
+}
+
+/* the close */
+
+.close{
+    fill:white;
+    position:relative;
+    height:1.5rem;
+    top:6rem;
+    cursor:pointer;
+    left:16rem;
+}
