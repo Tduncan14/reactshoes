@@ -272,4 +272,38 @@ button:hover{
         display: flex;
     }
     
+    .content h1{
+        margin-left:-7.5rem;
+        margin-top:-2rem;
+        font-size:2.5rem;
+    }
+
+    .price{
+        margin-left:-6.5rem;
+    }
+
+    .money .percentage{
+  
+     left: -.1rem;
+     top:.3rem;
+ 
+
+    }
+
+   .money .slashPriced{
+
+    position:relative;
+    left:7.5rem;
+    top:1rem;
+   }
+
+
+
+   .text-wrap{
+    position:relative;
+    left:-6rem;
+    inline-size: 350px; 
+    overflow: hidden;
+    
+   }
 }
