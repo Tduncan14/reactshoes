@@ -1,5 +1,6 @@
 import React from 'react';
 import './Nav.css';
+import MenuImage from '../asset/icon-menu.svg';
 
 
 
@@ -10,7 +11,9 @@ const Nav = ({showtheCart}) => {
     return(
         <div className="navbar">
              
-             <div className="navlist">
+             <div className="navlist nav-l">
+
+                <img  className="hidden" src={MenuImage} />
 
                 <div className="logo"> sneakers </div>
 

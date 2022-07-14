@@ -30,14 +30,12 @@ const SmallCart = ({showCart,totalnumber,setTotalnumber,showtheCart}) => {
 
 
     const deleteEverything = () => {
-        setTotalnumber(0)
+        setTotalnumber('')
         setText('')
     }
 
 
-    const setData = () => {
-       
-    }
+
 
    
     
