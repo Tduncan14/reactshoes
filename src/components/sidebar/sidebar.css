@@ -1,0 +1,57 @@
+
+
+
+
+.sidevisible{
+    display:none;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    
+    .sidevisible{
+        display:block;
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        display:flex;
+        z-index: 12;
+        width:100%;
+    }
+
+
+    .image{
+        margin-top:3rem;
+        fill:black !important;
+        background-color: blue;
+        position: relative;
+        top:-1rem;
+        left:3rem;
+    }
+
+
+    .sidemenu{
+        height:100%;
+        background:white;
+        width:40%;
+
+    }
+
+    .sideMenuBlack{
+        background-color:black;
+        height:100%;
+        width:45%;
+        opacity:.5;
+    }
+
+     li {
+        list-style-type:none;
+        text-decoration: none;
+        margin-bottom:2rem;
+        font-weight:700;
+    }
+}

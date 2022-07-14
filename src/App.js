@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Content from './components/content/Content';
 import Overlay from './components/overlay/Overlay';
 import SmallCart from './components/smallCart/SmallCart';
+import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Nav showtheCart ={showtheCart} />
       <SmallCart totalnumber={totalnumber} showCart={showCart} showtheCart={showtheCart} setTotalnumber={setTotalnumber}/>
       <hr className='hr' />
+      <Sidebar />
       {/* beginning of Content */}
       <Content setImage={setImage} setTheOverlay={setTheOverlay} setTotalnumber={setTotalnumber} />
        { overlay && <Overlay image={image} setTheOverlay={setTheOverlay}  />}
