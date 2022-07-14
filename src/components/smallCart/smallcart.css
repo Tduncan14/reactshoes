@@ -36,3 +36,74 @@ h1{
     font-size:1.2rem;
 
 }
+
+/* cart number */
+
+.cartNumber{
+    position:absolute;
+    top:2.9rem;
+    right:19.5rem;
+    font-size:.8rem;
+    background-color:orange;
+    border-radius:50%;
+    color:white;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+
+/* thumbnail */
+
+.thumbnailtext{
+    display:flex;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    position:relative;
+    top:-4rem;
+}
+
+.imageText{
+    height:3.5rem;
+    border-radius:10px;
+    margin-right:.5rem;
+ 
+}
+
+
+.text{
+    font-size:1rem;
+    position:relative;
+    top:-1rem;
+  
+}
+
+.textpay {
+    margin-left:-6.5rem;
+    margin-top:-1rem;
+    font-weight: 500;
+}
+
+.textpay span{
+    color:black;
+    font-weight: 500;
+}
+
+.deleteText{
+    height:1rem;
+    margin-left:.9rem;
+    margin-top:1rem;
+    cursor: pointer;
+    
+}
+
+/* the button */
+
+.checkoutB{
+    position: relative;
+    top:-4rem;
+    width:87%;
+    padding-right:2rem;
+    padding-top:1.3rem;
+    padding-bottom:1.3rem;
+    padding-left:2rem;
+}

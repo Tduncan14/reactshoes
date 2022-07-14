@@ -6,7 +6,7 @@ import  Image2 from '../../asset/image-product-2.jpg';
 import  Image3 from '../../asset/image-product-3.jpg';
 import  Image4 from '../../asset/image-product-4.jpg';
 
-const Content = ({setTheOverlay,setImage}) => {
+const Content = ({setTheOverlay,setImage,setTotalnumber}) => {
 
   const[mainImage,setmainImage] = useState(Image1);
   const[lay,setLay] = useState(false);
@@ -56,6 +56,8 @@ const Content = ({setTheOverlay,setImage}) => {
       settotalCost( total * 125.00)
 
       console.log(total,'this is the cost',totalCost)
+
+      setTotalnumber(total)
       
       }
 
