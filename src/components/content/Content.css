@@ -1,4 +1,9 @@
 
+.hiddens{
+  
+    display: none;
+}
+
 
 .flexContent{
     display:flex;
@@ -237,9 +242,10 @@ button:hover{
     }
     .mainImage img{
         margin-top:-2.5rem;
-        margin-left:-12rem;
+        margin-left:-10rem;
         border-radius: 0;
         height:20rem;
+        width: 110%;
         padding-right:0;
         padding-left:0;
     }
@@ -305,5 +311,27 @@ button:hover{
     inline-size: 350px; 
     overflow: hidden;
     
+   }
+
+   .hiddens{
+     display:inline-block;
+     position:absolute;
+     fill:white;
+   }
+   
+   .left{
+    top:13rem;
+    left:-7rem;
+    background:white;
+    border-radius:50%;
+    padding:.2rem .5rem;
+   }
+
+   .right{
+    top:13rem;
+    right:9rem;
+    background:white;
+    border-radius:50%;
+    padding:.2rem .5rem;
    }
 }

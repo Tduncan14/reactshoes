@@ -13,6 +13,7 @@ function App() {
     const [image,setImage] = useState();
     const [showCart,setShowCart] = useState(false)
     const [totalnumber,setTotalnumber] = useState();
+    const [menuOpen,setmenuOpen] = useState(false)
 
 
     const setTheOverlay = (e) => {
@@ -22,6 +23,10 @@ function App() {
     }
 
 
+    const toggleMenu = () => {
+          setmenuOpen(!menuOpen)
+    }
+
     const showtheCart = () => {
 
           setShowCart(!showCart);
@@ -30,10 +35,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav showtheCart ={showtheCart} />
+      <Nav showtheCart ={showtheCart} toggleMenu ={toggleMenu} />
       <SmallCart totalnumber={totalnumber} showCart={showCart} showtheCart={showtheCart} setTotalnumber={setTotalnumber}/>
       <hr className='hr' />
-      <Sidebar />
+      <Sidebar  toggleMenu={toggleMenu} menuOpen={menuOpen}/>
       {/* beginning of Content */}
       <Content setImage={setImage} setTheOverlay={setTheOverlay} setTotalnumber={setTotalnumber} />
        { overlay && <Overlay image={image} setTheOverlay={setTheOverlay}  />}

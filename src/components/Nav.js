@@ -5,7 +5,7 @@ import MenuImage from '../asset/icon-menu.svg';
 
 
 
-const Nav = ({showtheCart}) => {
+const Nav = ({showtheCart,toggleMenu}) => {
 
 
     return(
@@ -13,7 +13,7 @@ const Nav = ({showtheCart}) => {
              
              <div className="navlist nav-l">
 
-                <img  className="hidden" src={MenuImage} />
+                <img  onClick={toggleMenu} className="hidden" src={MenuImage} />
 
                 <div className="logo"> sneakers </div>
 

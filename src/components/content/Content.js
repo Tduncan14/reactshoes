@@ -5,6 +5,8 @@ import  Image1 from '../../asset/image-product-1.jpg';
 import  Image2 from '../../asset/image-product-2.jpg';
 import  Image3 from '../../asset/image-product-3.jpg';
 import  Image4 from '../../asset/image-product-4.jpg';
+import  left from '../../asset/icon-next.svg';
+import  right from '../../asset/icon-previous.svg';
 
 const Content = ({setTheOverlay,setImage,setTotalnumber}) => {
 
@@ -62,6 +64,56 @@ const Content = ({setTheOverlay,setImage,setTotalnumber}) => {
       }
 
 
+      const prev = (e) => {
+
+  
+        console.log(e.target,mainImage)
+        console.log(mainImage.match() == Image1)
+    
+        const imagess = [Image1,Image2,Image3,Image4] ;
+    
+    
+        if(mainImage.match(Image1) == Image1){
+    
+        }
+    
+        if(mainImage.match(Image2) == Image2){
+           setmainImage(Image1)
+        }
+    
+        if(mainImage.match(Image3) == Image3){
+          setmainImage(Image2)
+       }
+       
+       if(mainImage.match(Image4) == Image4){
+        setmainImage(Image3)
+     }
+     
+        
+    
+    
+       }
+    
+       const next = () => {
+    
+        if(mainImage.match(Image1) == Image1){
+          setmainImage(Image2)
+        }
+    
+        if(mainImage.match(Image2) == Image2){
+          setmainImage(Image3)
+    
+        }
+    
+        if(mainImage.match(Image3) == Image3){
+          setmainImage(Image4)
+       }
+      
+        
+      }
+    
+
+
   
   
   return (
@@ -71,10 +123,15 @@ const Content = ({setTheOverlay,setImage,setTotalnumber}) => {
         <div className="left-c">
 
 
+        <img onClick={prev} src={left} className="hiddens left" />
+        <img onClick={next} src={right} className="hiddens right" />
             <div className="mainImage">
+
+         
 
               <img  onClick={setTheOverlay} src={mainImage}  alt="image" />
 
+            
             </div>
 
             <div className="subImages">
