@@ -27,7 +27,8 @@
     .image{
         margin-top:3rem;
         fill:black !important;
-        background-color: blue;
+        color:black;
+        background-color:black;
         position: relative;
         top:-1rem;
         left:3rem;

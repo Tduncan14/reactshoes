@@ -2,6 +2,7 @@ import React ,{useState,useEffect} from 'react'
 import close from '../../asset/icon-close.svg';
 import './sidebar.css'
 
+
 const Sidebar = ({toggleMenu,menuOpen,closeTheCart}) => {
 
     const [isTrue,setisTrue] = useState(false);
