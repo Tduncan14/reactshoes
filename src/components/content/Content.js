@@ -150,7 +150,7 @@ const Content = ({setTheOverlay,setImage,setTotalnumber,closetheCart}) => {
             <h5 class="company-header">SNEAKER  COMPANY</h5>
 
             <div className="content">
-              <h1> Fall Limited Edition <br /> Sneakers</h1>
+              <h1 className="h1h1"> Fall Limited Edition <br /> Sneakers</h1>
 
               <p className="text-wrap">These low-profile sneakers are your perfect casual wear companion
                 .Featuring a durable rubber outer sole, they'll withstand everything the weather can offer

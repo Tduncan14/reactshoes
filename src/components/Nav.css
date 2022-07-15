@@ -25,6 +25,7 @@
 .navlist ul > li  {
     padding:0 1.2rem;
     list-style-type:none;
+    cursor: pointer;
 }
 .nav-r{
     display:flex;
@@ -47,6 +48,12 @@
     border:darkorange 2px solid;
 }
 
+
+li:hover{
+    text-decoration:underline;
+    text-decoration-color:darkorange;
+    text-underline-offset: 2.9rem;
+}
 
 .first{
     margin-right:2.5rem;
