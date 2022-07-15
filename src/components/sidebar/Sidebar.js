@@ -2,7 +2,7 @@ import React ,{useState,useEffect} from 'react'
 import close from '../../asset/icon-close.svg';
 import './sidebar.css'
 
-const Sidebar = ({toggleMenu,menuOpen}) => {
+const Sidebar = ({toggleMenu,menuOpen,closeTheCart}) => {
 
     const [isTrue,setisTrue] = useState(false);
 
@@ -12,6 +12,12 @@ const Sidebar = ({toggleMenu,menuOpen}) => {
     },[menuOpen])
 
 
+    const closed = () => {
+      toggleMenu()
+
+    }
+
+
 
   return (
     <>
@@ -19,7 +25,7 @@ const Sidebar = ({toggleMenu,menuOpen}) => {
 
         <div className="sidemenu">
 
-            <img onClick={toggleMenu} className="image" src={close}  />
+            <img onClick={closed} className="image" src={close}  />
           
 
             <ul className="sidelist">

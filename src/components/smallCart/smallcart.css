@@ -112,6 +112,13 @@ h1{
 
 @media screen and (max-width:768px) {
     .whiteCard{
-        left:.3rem;
+        right:15rem;
+    }
+
+    .cartNumber{
+       position:absolute;
+       right:18.9rem;
+       top:2.2rem;
+     
     }
 }

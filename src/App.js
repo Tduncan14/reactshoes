@@ -27,18 +27,26 @@ function App() {
           setmenuOpen(!menuOpen)
     }
 
+   
+
     const showtheCart = () => {
 
           setShowCart(!showCart);
           console.log(showCart,'this is the showcart')
     }
 
+
+    const closetheCart = () => {
+
+      setShowCart(false);
+    }
+
   return (
     <div className="App">
-      <Nav showtheCart ={showtheCart} toggleMenu ={toggleMenu} />
+      <Nav showtheCart ={showtheCart} toggleMenu ={toggleMenu}  closetheCart={closetheCart}/>
       <SmallCart totalnumber={totalnumber} showCart={showCart} showtheCart={showtheCart} setTotalnumber={setTotalnumber}/>
       <hr className='hr' />
-      <Sidebar  toggleMenu={toggleMenu} menuOpen={menuOpen}/>
+      <Sidebar closetheCart={closetheCart}  toggleMenu={toggleMenu} menuOpen={menuOpen}/>
       {/* beginning of Content */}
       <Content setImage={setImage} setTheOverlay={setTheOverlay} setTotalnumber={setTotalnumber} />
        { overlay && <Overlay image={image} setTheOverlay={setTheOverlay}  />}
