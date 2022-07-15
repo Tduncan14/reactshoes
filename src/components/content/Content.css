@@ -318,7 +318,7 @@ button:hover{
    .text-wrap{
     position:relative;
     left:-6rem;
-    inline-size: 150px; 
+    inline-size: 350px; 
     overflow: hidden;
     
    }
@@ -327,6 +327,11 @@ button:hover{
      display:inline-block;
      position:absolute;
      fill:white;
+   }
+
+   .h1h1{
+    position: relative;
+    left:-.9rem;
    }
    
    .left{
