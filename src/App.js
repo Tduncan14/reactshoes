@@ -20,6 +20,7 @@ function App() {
 
         setoverlay(!overlay);
         setImage(e.target.src)
+        closetheCart()
     }
 
 
@@ -48,8 +49,8 @@ function App() {
       <hr className='hr' />
       <Sidebar closetheCart={closetheCart}  toggleMenu={toggleMenu} menuOpen={menuOpen}/>
       {/* beginning of Content */}
-      <Content setImage={setImage} setTheOverlay={setTheOverlay} setTotalnumber={setTotalnumber} />
-       { overlay && <Overlay image={image} setTheOverlay={setTheOverlay}  />}
+      <Content setImage={setImage} setTheOverlay={setTheOverlay} setTotalnumber={setTotalnumber} closetheCart={closetheCart} />
+       { overlay && <Overlay closetheCart={closetheCart} image={image} setTheOverlay={setTheOverlay}  />}
   
     </div>
   );

@@ -8,7 +8,7 @@ import  Image4 from '../../asset/image-product-4.jpg';
 import  left from '../../asset/icon-next.svg';
 import  right from '../../asset/icon-previous.svg';
 
-const Content = ({setTheOverlay,setImage,setTotalnumber}) => {
+const Content = ({setTheOverlay,setImage,setTotalnumber,closetheCart}) => {
 
   const[mainImage,setmainImage] = useState(Image1);
   const[lay,setLay] = useState(false);
